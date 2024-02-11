@@ -21,6 +21,8 @@
     font-family: 'Figtree', sans-serif;
     font-weight: 900;
     
+    
+    
   }
   
   nav {
@@ -29,6 +31,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     
   }
   .logo-container > a {
@@ -64,40 +67,29 @@
 
   .hamburger > span {
     display: block;
-    width: 33px;
-    height: 4px;
+    width: 28px;
+    height: 3px;
     margin-bottom: 5px;
     position: relative;
     
     background: #ffff;
     border-radius: 3px;
-
-    transform-origin: 4px 0px;
+    transition: all 0.3s ease-in-out;
   
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
   }
 
-  .hamburger > span:first-child{
-    transform-origin: 0% 0%;
-  }
+/* .hamburger > span.active {
 
-  .hamburger > span:nth-last-child(2)
-  {
-    transform-origin: 0% 100%;
-  }
 
-  .hamburger > span:nth-last-child(3):active {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-    }
+  } */
+
+
+
 
     /* bento grid section */
 
     .bento-container{
-        margin: 5% 0;
+        margin: 5% 1%;
         display: flex;
         justify-content: center;
     }
@@ -131,8 +123,12 @@
         color: #fff;
       }
 
+      .bento > div:hover{
+        transform: scale(1.05);
+      }
+
       #b-one{
-        background-image: url(../images/flower.jpg)  ;
+        background-image: url(./images/flower.jpg)  ;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -142,7 +138,7 @@
       }
 
       #b-two{
-        background-image: url(../images/og.jpg) ;
+        background-image: url(./images/og.jpg) ;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -152,7 +148,7 @@
 
 
       #b-three{
-        background-image: url(../images/key.jpg);
+        background-image: url(./images/key.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -162,7 +158,7 @@
 
 
       #b-four{
-        background-image: url(../images/light.jpg) ;
+        background-image: url(./images/light.jpg) ;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -172,7 +168,7 @@
 
 
       #b-five{
-        background-image: url(../images/code.jpg) ;
+        background-image: url(./images/code.jpg) ;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
