@@ -8,6 +8,20 @@
   body{
     background-color: #000000;
     font-family: 'Libre Franklin', sans-serif;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 500ms;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  .fade-in {
+    animation-name: fadeIn;
   }
   
   /* Navigation */
@@ -53,18 +67,22 @@
   }
   .navigation-items > a:hover {
     color: white;
+    font-size: 18px;
   }
   .navigation-items.active{
     display: flex;
     z-index: 2;
   }
+
+
+
   .hamburger {
     display: none;
     font-size: 20px;
     font-weight: 800;
+     transition: all 0.3s ease-in-out;
     
   }
-
   .hamburger > span {
     display: block;
     width: 28px;
@@ -78,10 +96,10 @@
   
   }
 
-/* .hamburger > span.active {
-
-
+  /* .bar:visited{
+    transform: rotate(45deg) translate(-7px, -7px);
   } */
+
 
 
 
@@ -114,6 +132,7 @@
 
     }
 
+  
     .bento-item > h3 {
         margin-top: auto;
         margin-bottom: 0.25rem;
