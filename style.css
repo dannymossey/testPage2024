@@ -73,10 +73,10 @@
   .navigation-items.active{
     display: flex;
     z-index: 2;
-    /* animation-duration: 2s;
+    animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-    animation-delay: 500ms; */
+    animation-name: slideIn;
   }
 
   #bar-one.active{
@@ -261,3 +261,12 @@
       grid-row: span 3;
     }
   }
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
